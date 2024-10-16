@@ -1,0 +1,244 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: Using incremental CMS is deprecated and will likely be removed in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/jars/hive-common-1.1.0-cdh5.11.2.jar!/hive-log4j.properties
+converting to local hdfs:/opt/cloudera/parcels/CDH/lib/hive/lib/json-serde-1.3.8-jar-with-dependencies.jar
+Added [/tmp/2ed83128-59fa-42a8-85c2-32319781e5a6_resources/json-serde-1.3.8-jar-with-dependencies.jar] to class path
+Added resources: [hdfs:/opt/cloudera/parcels/CDH/lib/hive/lib/json-serde-1.3.8-jar-with-dependencies.jar]
+OK
+Time taken: 1.443 seconds
+OK
+Time taken: 0.211 seconds
+OK
+Time taken: 0.079 seconds
+OK
+Time taken: 0.19 seconds
+Query ID = hob2022101_20220612202020_f384a802-89dd-42cc-b547-9b96923d07a7
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1652638596573_4587, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4587/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4587
+Hadoop job information for Stage-1: number of mappers: 10; number of reducers: 0
+2022-06-12 20:20:36,312 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:20:42,491 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 10.25 sec
+2022-06-12 20:20:45,575 Stage-1 map = 70%,  reduce = 0%, Cumulative CPU 55.73 sec
+2022-06-12 20:20:46,603 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 85.75 sec
+MapReduce Total cumulative CPU time: 1 minutes 25 seconds 750 msec
+Ended Job = job_1652638596573_4587
+Stage-4 is filtered out by condition resolver.
+Stage-3 is selected by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Launching Job 3 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1652638596573_4588, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4588/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4588
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-06-12 20:20:51,395 Stage-3 map = 0%,  reduce = 0%
+2022-06-12 20:20:56,599 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 3.66 sec
+MapReduce Total cumulative CPU time: 3 seconds 660 msec
+Ended Job = job_1652638596573_4588
+Moving data to: hdfs://mipt-master.atp-fivt.org:8020/user/hob2022101/metastore/kkt_text
+Table sherar_managed.kkt_text stats: [numFiles=1, numRows=796306, totalSize=33363002, rawDataSize=32566696]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 10   Cumulative CPU: 85.75 sec   HDFS Read: 2128700442 HDFS Write: 33363873 SUCCESS
+Stage-Stage-3: Map: 1   Cumulative CPU: 3.66 sec   HDFS Read: 33366519 HDFS Write: 33363002 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 29 seconds 410 msec
+OK
+Time taken: 26.03 seconds
+Query ID = hob2022101_20220612202020_d6ac1fac-69b0-4943-8c2a-a6a1c37738bd
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4589, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4589/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4589
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2022-06-12 20:21:02,026 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:21:07,165 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.42 sec
+2022-06-12 20:21:12,298 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 5.19 sec
+MapReduce Total cumulative CPU time: 5 seconds 190 msec
+Ended Job = job_1652638596573_4589
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4590, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4590/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4590
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2022-06-12 20:21:16,890 Stage-2 map = 0%,  reduce = 0%
+2022-06-12 20:21:20,993 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 1.11 sec
+2022-06-12 20:21:26,110 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 2.86 sec
+MapReduce Total cumulative CPU time: 2 seconds 860 msec
+Ended Job = job_1652638596573_4590
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 5.19 sec   HDFS Read: 33371632 HDFS Write: 5016 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 2.86 sec   HDFS Read: 9949 HDFS Write: 23 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 50 msec
+OK
+7728029110	13794225897
+Time taken: 29.304 seconds, Fetched: 1 row(s)
+OK
+Time taken: 0.093 seconds
+Query ID = hob2022101_20220612202121_d489400d-6e49-48a0-90dc-cd12725ffde2
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1652638596573_4591, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4591/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4591
+Hadoop job information for Stage-1: number of mappers: 10; number of reducers: 0
+2022-06-12 20:21:31,108 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:21:36,237 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 9.2 sec
+2022-06-12 20:21:39,308 Stage-1 map = 30%,  reduce = 0%, Cumulative CPU 17.51 sec
+2022-06-12 20:21:40,330 Stage-1 map = 90%,  reduce = 0%, Cumulative CPU 77.83 sec
+2022-06-12 20:21:41,352 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 87.97 sec
+MapReduce Total cumulative CPU time: 1 minutes 27 seconds 970 msec
+Ended Job = job_1652638596573_4591
+Stage-4 is filtered out by condition resolver.
+Stage-3 is selected by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Starting Job = job_1652638596573_4592, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4592/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4592
+Hadoop job information for Stage-3: number of mappers: 4; number of reducers: 0
+2022-06-12 20:21:45,866 Stage-3 map = 0%,  reduce = 0%
+2022-06-12 20:21:50,043 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 5.7 sec
+MapReduce Total cumulative CPU time: 5 seconds 700 msec
+Ended Job = job_1652638596573_4592
+Moving data to: hdfs://mipt-master.atp-fivt.org:8020/user/hob2022101/metastore/kkt_orc
+Table sherar_managed.kkt_orc stats: [numFiles=4, numRows=796306, totalSize=2716065, rawDataSize=233253685]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 10   Cumulative CPU: 87.97 sec   HDFS Read: 2128701352 HDFS Write: 2718723 SUCCESS
+Stage-Stage-3: Map: 4   Cumulative CPU: 5.7 sec   HDFS Read: 3050792 HDFS Write: 2716065 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 33 seconds 670 msec
+OK
+Time taken: 24.007 seconds
+Query ID = hob2022101_20220612202121_f6a95eb8-b15c-42a4-8cbf-a6ae26d3df44
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4593, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4593/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4593
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 1
+2022-06-12 20:21:56,072 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:22:00,171 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 5.91 sec
+2022-06-12 20:22:04,262 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 7.74 sec
+MapReduce Total cumulative CPU time: 7 seconds 740 msec
+Ended Job = job_1652638596573_4593
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4594, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4594/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4594
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2022-06-12 20:22:08,785 Stage-2 map = 0%,  reduce = 0%
+2022-06-12 20:22:12,884 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 0.95 sec
+2022-06-12 20:22:16,972 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 2.65 sec
+MapReduce Total cumulative CPU time: 2 seconds 650 msec
+Ended Job = job_1652638596573_4594
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 1   Cumulative CPU: 7.74 sec   HDFS Read: 2135770 HDFS Write: 5016 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 2.65 sec   HDFS Read: 9949 HDFS Write: 23 SUCCESS
+Total MapReduce CPU Time Spent: 10 seconds 390 msec
+OK
+7728029110	13794225897
+Time taken: 26.74 seconds, Fetched: 1 row(s)
+OK
+Time taken: 0.093 seconds
+Query ID = hob2022101_20220612202222_6217d754-a97f-4f9c-9049-d42dc6edeec7
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1652638596573_4595, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4595/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4595
+Hadoop job information for Stage-1: number of mappers: 10; number of reducers: 0
+2022-06-12 20:22:22,528 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:22:28,678 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 10.25 sec
+2022-06-12 20:22:30,794 Stage-1 map = 30%,  reduce = 0%, Cumulative CPU 19.19 sec
+2022-06-12 20:22:31,815 Stage-1 map = 90%,  reduce = 0%, Cumulative CPU 75.49 sec
+2022-06-12 20:22:32,835 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 85.82 sec
+MapReduce Total cumulative CPU time: 1 minutes 25 seconds 820 msec
+Ended Job = job_1652638596573_4595
+Stage-4 is filtered out by condition resolver.
+Stage-3 is selected by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Launching Job 3 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1652638596573_4596, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4596/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4596
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-06-12 20:22:37,337 Stage-3 map = 0%,  reduce = 0%
+2022-06-12 20:22:43,474 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 5.48 sec
+MapReduce Total cumulative CPU time: 5 seconds 480 msec
+Ended Job = job_1652638596573_4596
+Moving data to: hdfs://mipt-master.atp-fivt.org:8020/user/hob2022101/metastore/kkt_parquet
+Table sherar_managed.kkt_parquet stats: [numFiles=1, numRows=796306, totalSize=3423477, rawDataSize=2388918]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 10   Cumulative CPU: 85.82 sec   HDFS Read: 2128701852 HDFS Write: 3598850 SUCCESS
+Stage-Stage-3: Map: 1   Cumulative CPU: 5.48 sec   HDFS Read: 3606364 HDFS Write: 3423477 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 31 seconds 300 msec
+OK
+Time taken: 26.566 seconds
+Query ID = hob2022101_20220612202222_2c3c2451-dd7a-4400-a6e2-1e8208820204
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4597, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4597/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4597
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2022-06-12 20:22:48,695 Stage-1 map = 0%,  reduce = 0%
+2022-06-12 20:22:53,827 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.21 sec
+2022-06-12 20:22:57,918 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 5.98 sec
+MapReduce Total cumulative CPU time: 5 seconds 980 msec
+Ended Job = job_1652638596573_4597
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1652638596573_4598, Tracking URL = http://mipt-master.atp-fivt.org:8088/proxy/application_1652638596573_4598/
+Kill Command = /opt/cloudera/parcels/CDH-5.11.2-1.cdh5.11.2.p0.4/lib/hadoop/bin/hadoop job  -kill job_1652638596573_4598
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2022-06-12 20:23:03,443 Stage-2 map = 0%,  reduce = 0%
+2022-06-12 20:23:07,559 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2022-06-12 20:23:11,646 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 3.0 sec
+MapReduce Total cumulative CPU time: 3 seconds 0 msec
+Ended Job = job_1652638596573_4598
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 5.98 sec   HDFS Read: 2572617 HDFS Write: 5016 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 3.0 sec   HDFS Read: 9949 HDFS Write: 23 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 980 msec
+OK
+7728029110	13794225897
+Time taken: 28.01 seconds, Fetched: 1 row(s)
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.

@@ -1,0 +1,1 @@
+hive -f average_afternoon_profit.sql

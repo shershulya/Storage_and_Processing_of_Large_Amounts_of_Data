@@ -1,0 +1,1 @@
+hive -f most_profitable_day.sql
